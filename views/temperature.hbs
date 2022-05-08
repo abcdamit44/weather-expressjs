@@ -1,0 +1,26 @@
+{{>header}}
+{{!-- <img src="images/bg.jpg" class="img-fluid" alt=""> --}}
+<div class="container">
+
+    <div class="temp_main d-flex justify-content-center align-items-center flex-column">
+        <div class="temp_input bg-dark py-2 px-2 rounded w-50 d-flex justify-content-between">
+            <input type="text" placeholder="City Name" class="p-1 w-100" id="cityName">
+            <button class="btn btn-outline-light rounded ms-3 " id="submitBtn">Check</button>
+        </div>
+        <div class="temp_output mt-4 bg-dark w-50 rounded">
+            <div class="temp_output_1 d-flex justify-content-between border-bottom px-3 py-3  bg-black  rounded">
+                <span class="text-white" id="day">Saturday</span>
+                <span class="text-white" id="date"></span>
+            </div>
+            <p class="text-white m-3 fs-2 fw-light" id="notice">Get Out Put Here</p>
+            
+            <div class="temp_output_2 d-flex justify-content-around hide p-5">
+                <span class="text-white display-5" id="showTemp"></span>
+                <span class="text-white display-4" id="showWeather"></span>
+            </div>
+    </div>
+   </div>
+
+</div>
+<script src="js/script.js"></script>
+{{>footer}}
